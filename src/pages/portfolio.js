@@ -1,11 +1,11 @@
-function menuPage() {
+function portfolioPage() {
   let contentWrapper = document.querySelector('.content');
   let contentHeader = document.createElement('div');
   let contentTitle = document.createElement('h3');
-  contentTitle.textContent = 'menu content';
+  contentTitle.textContent = 'portfolio content';
 
   contentWrapper.appendChild(contentHeader);
   contentHeader.appendChild(contentTitle);
 }
 
-export default menuPage;
+export default portfolioPage;

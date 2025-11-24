@@ -1,6 +1,6 @@
 import './styles.css';
 import homePage from './pages/home';
-import menuPage from './pages/menu';
+import portfolioPage from './pages/portfolio';
 import aboutPage from './pages/about';
 import contactPage from './pages/contact';
 import { createButton } from './components/button';
@@ -15,12 +15,12 @@ let homeBtn = createButton({
 });
 nav.appendChild(homeBtn);
 
-let menuBtn = createButton({
-  label: 'Menu',
-  onClick: loadMenu,
+let portfolioBtn = createButton({
+  label: 'Portfolio',
+  onClick: loadPortfolio,
   classes: ['btn'],
 });
-nav.appendChild(menuBtn);
+nav.appendChild(portfolioBtn);
 
 let aboutBtn = createButton({
   label: 'About',
@@ -41,9 +41,9 @@ function loadHome() {
   homePage();
 }
 
-function loadMenu() {
+function loadPortfolio() {
   contentWrapper.innerHTML = '';
-  menuPage();
+  portfolioPage();
 }
 
 function loadAbout() {
