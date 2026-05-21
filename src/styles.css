@@ -3,25 +3,49 @@
     --secondary-color: #d62525;
     --accent-color: #5272ff;
     --background-color: #f4f3f3;
-    font-family: 'GeneralSans', sans-serif;
+    font-family: 'Helvetica', sans-serif;
 }
 
 body {
     background: var(--background-color);
-    margin: 0 8rem;
+    margin: 1rem 8rem;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2em;
-    padding:0.5em;
-    border: 0.5px solid var(--accent-color);
-    border-radius: 8px;
+h1 {
+    font-size: 32px;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+h2 {
+    font-size: 24px;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+h3 {
+    font-size: 18px;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+h4 {
+    font-size: 16px;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+h5 {
+    font-size: 14px;
+    color: var(--primary-color);
+    margin: 0;
 }
 
 .content {
-    text-align: center;
-    color: var(--primary-color);
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
 }

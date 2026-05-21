@@ -1,3 +1,5 @@
+import './button.css';
+
 export function createButton({
   label = 'Button',
   onClick = null, // if no click handler, do nothing
