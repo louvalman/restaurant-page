@@ -1,0 +1,7 @@
+@import './styles.css';
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
