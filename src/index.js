@@ -1,14 +1,12 @@
 import './styles.css';
 import homePage from './pages/home';
-import { createButton } from './components/button';
+import { el } from './utils/dom';
 import { createHeader } from './components/header';
-import { createCard } from './components/card';
 
-let body = document.querySelector('body');
-let content = document.createElement('div');
-content.classList.add('content');
+const body = document.querySelector('body');
+const content = el('div', { classList: ['content'] });
 
-let header = createHeader({
+const header = createHeader({
   title: 'logo',
   buttons: [
     { label: 'button', onClick: () => alert('Button 1 clicked!') },
@@ -17,7 +15,5 @@ let header = createHeader({
   ],
 });
 
-body.appendChild(header);
-body.appendChild(content);
-
-homePage();
+body.append(header, content);
+content.append(homePage());

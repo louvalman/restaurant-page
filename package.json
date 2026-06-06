@@ -8,8 +8,8 @@
     "build": "webpack --config webpack.prod.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "lint": "eslint src/**/*.js",
-    "format": "prettier --write src/**/*.js"
+    "lint": "eslint \"src/**/*.js\"",
+    "format": "prettier --write \"src/**/*.js\""
   },
 "repository": {
   "type": "git",

@@ -1,4 +1,4 @@
-export const el = (tag, attributes, ...children) => {
+export const el = (tag, attributes = {}, ...children) => {
   const element = document.createElement(tag);
 
   for (const [key, value] of Object.entries(attributes)) {
