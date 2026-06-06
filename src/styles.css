@@ -43,9 +43,4 @@ h5 {
 
 .content {
     margin-top: 4rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 4em;
 }

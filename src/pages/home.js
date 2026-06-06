@@ -1,3 +1,4 @@
+import './home.css';
 import { el } from '../utils/dom';
 import { createCard } from '../components/card';
 
