@@ -1,4 +1,5 @@
 import './button.css';
+import { el } from '../utils/dom';
 
 export function createButton({
   label = 'Button',
@@ -6,17 +7,10 @@ export function createButton({
   type = 'button', // no form submit
   classes = [],
 } = {}) {
-  // makes sure arguments are optional
-  const btn = document.createElement('button');
-  btn.type = type;
-  btn.textContent = label;
-
-  // Base class + optional extra classes
-  btn.classList.add('btn', ...classes);
-
-  if (typeof onClick === 'function') {
-    btn.addEventListener('click', onClick);
-  }
-
-  return btn;
+  return el('button', {
+    type,
+    textContent: label,
+    classList: ['btn', ...classes],
+    ...(typeof onClick === 'function' && { on: { click: onClick } }), // only add event listener if onClick is a function
+  });
 }
