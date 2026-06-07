@@ -3,7 +3,7 @@ import { el } from '../utils/dom';
 import { createButton } from './button';
 
 export function createHeader({
-  title = 'logoname',
+  title = 'Site',
   classes = [],
   buttons = [],
 } = {}) {

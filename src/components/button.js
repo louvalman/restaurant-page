@@ -3,7 +3,7 @@ import { el } from '../utils/dom';
 
 export function createButton({
   label = 'Button',
-  onClick = null, // if no click handler, do nothing
+  onClick = null, //
   type = 'button', // no form submit
   classes = [],
 } = {}) {

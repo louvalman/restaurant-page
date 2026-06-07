@@ -2,7 +2,7 @@ import './styles.css';
 import homePage from './pages/home';
 import { createHeader } from './components/header';
 
-const body = document.querySelector('body');
+const body = document.body;
 
 const header = createHeader({
   title: 'logo',
