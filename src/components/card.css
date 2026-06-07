@@ -1,0 +1,6 @@
+.card {
+    padding: 24px 32px;
+    border: solid 1px var(--primary-color);
+    min-width: 180px;
+    max-width: 240px;
+}
