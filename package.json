@@ -11,9 +11,9 @@
     "lint": "eslint \"src/**/*.js\"",
     "format": "prettier --write \"src/**/*.js\""
   },
-"repository": {
-  "type": "git",
-  "url": "git+https://github.com/louvalman/webpack-template.git"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/louvalman/webpack-template.git"
   },
   "keywords": [],
   "author": "",
@@ -27,6 +27,7 @@
     "@eslint/js": "^10.0.1",
     "copy-webpack-plugin": "^13.0.1",
     "css-loader": "^7.1.2",
+    "dotenv-webpack": "^9.0.0",
     "eslint": "^10.4.0",
     "eslint-config-prettier": "^10.1.8",
     "gh-pages": "^6.3.0",
